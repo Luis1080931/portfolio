@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Portafolio </title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"> Luis </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()"> INICIO </a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()"> SOBRE MI </a></li>
+                    <!-- <li><a href="#skills" onclick="seleccionar()"> SKILLS </a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()"> CURRICULUM </a></li> -->
+                    <li><a href="#portfolio" onclick="seleccionar()"> PORTAFOLIO </a></li>
+                    <!-- <li><a href="#contacto" onclick="seleccionar()"> CONTACTO </a></li> -->
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+    
+    <!-- SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/baki.jpeg" alt="">
+            </div>
+            <h1> Luis Ubaque Perdomo </h1>
+            <h2> Tecnologo Análisis y Desarrollo de Software </h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Luis Ubaque. </span> Tengo 17 años de edad y estudio un tecnólogo en análisis y desarrollo de software. Me gusta mucho el mundo de la programación. Estoy empezando en esto y me ha gustado bastante. Quiero adquirir muchos conocimientos y destacarme en varios lenguajes de programación. Quiero entrar al mundo laboral y conseguir un buen empleo, para lograr cumplir metas y objetivos que a lo largo de mi preparación he fijado </p>
+        
+
+        <div class="fila">
+            <!-- DATOS PERSONALES -->
+            <div class="col">
+                <h3> Datos personales </h3>
+                <ul>
+                    <li>
+                        <strong> Cumpleaños </strong>
+                        20-12-2005
+                    </li>
+                    <li>
+                        <strong> Teléfono </strong>
+                        3154051769
+                    </li>
+                    <li>
+                        <strong> Email </strong>
+                        luisu0616@gmail.com
+                    </li>
+                    <li>
+                        <strong>Website </strong>
+                        https://luis1080931.github.io/sitio-web/
+                    </li>
+                    <li>
+                        <strong> Dirección  </strong>
+                        Timana-Huila
+                    </li>
+                    <li>
+                        <strong> Cargo </strong>
+                        <span>Aprendiz</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Intereses -->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span> Juegos </span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span> Musica </span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span> Viajar </span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-brands fa-apple"></i>
+                        <span> Mac OS </span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-person-hiking"></i>
+                        <span> Caminar </span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-book"></i>
+                        <span> Leer </span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-car"></i>
+                        <span> Autos </span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-camera"></i>
+                        <span> Fotografías </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overplay"></span>
+        </button>
+    </div>
+    </section>
+
+    <!-- SECCION SKILLS-->
+   <!--  <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2> Skills </h2>
+            <div class="fila">
+                <div class="col">
+                    <h3> Technical Skills </h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3> Professional Skills </h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- SECCIÓN CURRICULUM -->
+    <!-- <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Sena Yamboro</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis, quod atque dolorem earum nihil beatae tempora reprehenderit fugit cum odio ullam non numquam porro quidem possimus ea incidunt in!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Sena Yamboro</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis, quod atque dolorem earum nihil beatae tempora reprehenderit fugit cum odio ullam non numquam porro quidem possimus ea incidunt in!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Sena Yamboro</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis, quod atque dolorem earum nihil beatae tempora reprehenderit fugit cum odio ullam non numquam porro quidem possimus ea incidunt in!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo </h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa"> Nombre de compañía</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis, quod atque dolorem earum nihil beatae tempora reprehenderit fugit cum odio ullam non numquam porro quidem possimus ea incidunt in!</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa"> Nombre de compañía</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis, quod atque dolorem earum nihil beatae tempora reprehenderit fugit cum odio ullam non numquam porro quidem possimus ea incidunt in!</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa"> Nombre de compañía</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis, quod atque dolorem earum nihil beatae tempora reprehenderit fugit cum odio ullam non numquam porro quidem possimus ea incidunt in!</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/calendario.png" alt="">
+                    <div class="overlay">
+                        <h3>Calendario</h3>
+                        <p>Grid</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/maqueta-2.png" alt="">
+                    <div class="overlay">
+                        <h3>Maquetacion</h3>
+                        <p>Mt 09</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/menu-sena.png" alt="">
+                    <div class="overlay">
+                        <h3>Menu</h3>
+                        <p>Sena </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/slider.png" alt="">
+                    <div class="overlay">
+                        <h3>Slider</h3>
+                        <p>Motos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/carrito.png" alt="">
+                    <div class="overlay">
+                        <h3>Carrito</h3>
+                        <p> Rines TRD </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/amazon.png" alt="">
+                    <div class="overlay">
+                        <h3>Amazon</h3>
+                        <p>Pc gaming </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <!-- <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Tu numero telefonico">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mssj <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <img src="img/calendario.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Contact me 3154051769
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email luisu0616@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
